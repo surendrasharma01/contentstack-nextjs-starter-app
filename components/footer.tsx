@@ -112,10 +112,12 @@ export default function Footer({ footer, entries }: {footer: FooterProps, entrie
       </div>
       {footerData && typeof footerData.copyright === 'string' ? (
         <div className='copyright' {...footer.$?.copyright as {}}>
+          <h5>SK</h5>
           {parse(footerData.copyright)}
         </div>
       ) : (
         <div className='copyright'>
+          <h5>SK 1</h5>
           <Skeleton width={500} />
         </div>
       )}
